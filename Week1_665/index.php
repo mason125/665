@@ -16,6 +16,17 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-      
+        <div id ="wrapper">
+            <nav class ="navbar navbar-inverse navbar-fixed-top" role ="navigation">
+                <div class ="navbar-header">
+                    <button type ="button" class ="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class ="icon-bar"></span>
+                        <span class ="icon-bar"></span>
+                        <span class ="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="color:red">txt</a>
+                </div>
+            </nav>
+        </div>
     </body>
 </html>
