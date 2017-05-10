@@ -26,18 +26,18 @@ and open the template in the editor.
                         <span class ="icon-bar"></span>
                         <span class ="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" style="color:red">txt</a>
+                    <a class="navbar-brand" style="color:red">Development Labs</a>
                 </div>
                 <!--nav bar links-->
-                <div class ="collapse navbar-collapse navbar-ex1-collapse">
+                <div class ="collapse navbar-collapse navbar-ex1-collapse text-center">
                     <ul class ="nav navbar-nav">
-                        <li><a onclick="clearKpis()">Layout</a></li>
-                        <li><a onclick="flort2()">Flotr2</a></li>
-                        <li><a onclick="chartjs()">Chart.js</a></li>
-                        <li><a onclick="chartist()">Chartist.js</a></li>
-                        <li><a onclick="google()">Google Chart</a></li>
-                        <li><a onclick="d3()">D3</a></li>
-                        <li><a onclick="leaflet()">Leaflet</a></li>
+                        <li><a onclick="clearKpis()"><b>Layout</b></a></li>
+                        <li><a onclick="flort2()"><b>Flotr2</b></a></li>
+                        <li><a onclick="chartjs()"><b>Chart.js</b></a></li>
+                        <li><a onclick="chartist()"><b>Chartist.js</b></a></li>
+                        <li><a onclick="google()"><b>Google Chart</b></a></li>
+                        <li><a onclick="d3()"><b>D3</b></a></li>
+                        <li><a onclick="leaflet()"><b>Leaflet</b></a></li>
                     </ul>
                 </div>
             </nav>
@@ -82,7 +82,7 @@ and open the template in the editor.
         <!--footer code-->
         <footer class="container-fluid bg-4 text-center" style ="background-color:black; color:white;">
             <p> Data visuals </p>
-            <p><a href="http://www.ackmeedevlab.com">www.ackmeedevlabs.com</a></p>
+            <p><a href="http://www.ackmeedevlabs.com">www.ackmeedevlabs.com</a></p>
         </footer>
     </body>
 </html>
