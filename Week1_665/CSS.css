@@ -12,3 +12,14 @@ and open the template in the editor.
 {
     height: 150px;
 }
+
+#foot
+{
+    background-color:black; 
+    color:red;   
+    font-style: oblique;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}

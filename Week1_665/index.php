@@ -26,7 +26,7 @@ and open the template in the editor.
                         <span class ="icon-bar"></span>
                         <span class ="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" style="color:red">Development Labs</a>
+                    <a class="navbar-brand" style="color:red; font-style:oblique;">Development Labs</a>
                 </div>
                 <!--nav bar links-->
                 <div class ="collapse navbar-collapse navbar-ex1-collapse text-center">
@@ -80,8 +80,8 @@ and open the template in the editor.
             </div>
         <br>
         <!--footer code-->
-        <footer class="container-fluid bg-4 text-center" style ="background-color:black; color:white;">
-            <p> Data visuals </p>
+        <footer class="container-fluid bg-4 text-center" id="foot">
+            <p> Data Visuals </p>
             <p><a href="http://www.ackmeedevlabs.com">www.ackmeedevlabs.com</a></p>
         </footer>
     </body>
