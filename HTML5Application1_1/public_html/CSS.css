@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 9, 2017, 10:36:01 PM
+    Author     : Mason
+*/
+
+.kpis
+{
+    height: 400px;
+}
+
+.dashStyle
+{
+    width:200px;
+    height:100px;
+}
+
+#foot
+{
+    background-color:black; 
+    color:red;   
+    font-style: oblique;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+#dash
+{
+    text-align: center;
+    color:red;
+    font-style: oblique;
+}
+

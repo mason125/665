@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src ="functions.js" type="text/javascript"></script>
+         <script src="flotr2.min.js"></script>
+        <link rel ="stylesheet" href="CSS.css" type ="text/css">
+        <title>MSSE 665</title>
+    </head>
+    <body>
+        <div id ="wrapper">
+            <!--nav bar-->
+            <nav class ="navbar navbar-inverse navbar-fixed-top" role ="navigation">
+                <div class ="navbar-header">
+                    <button type ="button" class ="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class ="icon-bar"></span>
+                        <span class ="icon-bar"></span>
+                        <span class ="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="color:red; font-style:oblique;">Development Labs</a>
+                </div>
+                <!--nav bar links-->
+                <div class ="collapse navbar-collapse navbar-ex1-collapse text-center">
+                    <ul class ="nav navbar-nav">
+                        <li><a onclick="clearKpis()"><b>Layout</b></a></li>
+                        <li><a onclick="flotr2()"><b>Flotr2</b></a></li>
+                        <li><a onclick="chartjs()"><b>Chart.js</b></a></li>
+                        <li><a onclick="chartist()"><b>Chartist.js</b></a></li>
+                        <li><a onclick="google()"><b>Google Chart</b></a></li>
+                        <li><a onclick="d3()"><b>D3</b></a></li>
+                        <li><a onclick="leaflet()"><b>Leaflet</b></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- main content code-->
+            <div id ="page-wrapper">
+                <div class="container-fluid">
+                    <div class ="row">
+                        <div class ="col-lg-12">
+                            <br>
+                            <!-- content for header-->
+                            <h2 class="page-header" id="dash">
+                                Software Testing Dashboard
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!--graphs KPI containers will respond to screen size-->
+                <div class="container-fluid bg-3 text-center kpis">
+                    <div class="row">
+                        <div class ="col-sm-4">
+                            <p>Defects</p>
+                            <div id='defects' class ="container-fluid bg-3 text-center dashStyle"></div>
+                        </div>
+                        <div class ="col-sm-4">
+                            <p>Defect Acceptance</p>
+                            <div id ="DA" class ="container-fluid bg-3 text-center dashStyle"></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>Test Efficiency</p>
+                            <div id ="TE" class ="container-fluid bg-3 text-center dashStyle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class ="container-fluid bg-3 text-center" style="height:100px">
+                    <div class ="row">
+                        <p>Bad Fix Defect</p>
+                        <div id ="B" class ="container-fluid bg-3 text-center" style="height:100px; width:500px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--footer code-->
+        <footer class="container-fluid bg-4 text-center" id="foot">
+            <p> Data Visuals </p>
+            <p><a href="http://www.ackmeedevlabs.com">www.ackmeedevlabs.com</a></p>
+        </footer>
+    </body>
+</html>
