@@ -58,7 +58,14 @@ window.onload = function()
 };
 
 //functions
-function clearKPIs(){}
+function clearKPIs()
+{
+    //clear out all graphs
+    document.getElementById("defects").innerHTML = "";
+    document.getElementById("DA").innerHTML = "";
+    document.getElementById("TE").innerHTML = "";
+    document.getElementById("B").innerHTML = "";
+}
 function flotr2()
 {
     //assign to div tag
@@ -68,10 +75,10 @@ function flotr2()
     var B = document.getElementById("B");
     
     //describe what chart is for
-    var DFTitle = {title:"Number of defects"};
-    var DATitle = {title:"Defect Acceptacnce Rate %"};
+    var DFTitle = {title:"Number of defects", radar:{show:true}};
+    var DATitle = {title:"Defect Acceptacnce Rate",bars:{show:true}};
     var TETitle = {title:"Number of Tests/Day"};
-    var BTitle  = {title:"Number of wrong fixes"};
+    var BTitle  = {title:"Number of wrong fixes", bars:{show:true}};
     
     //display charts
     Flotr.draw(DF,k1,DFTitle);
