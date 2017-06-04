@@ -9,9 +9,9 @@
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
-    //assign vars after formatting to avoid a wrong login with correct 
-    //username and password
-    echo json_encode("15");
+    //data for chart
+    $data = array(3,3,5,5,7);
+    echo json_encode($data);
 }
 
 

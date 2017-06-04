@@ -281,17 +281,18 @@ function google()
     //clear old charts 
     clearKPIs();
     
-  $.ajax({
-     method:"POST",
-     url:'php.php',
-     data:"",
-     dataType:'json',
-     success:function(data){
-         var y1=data;
-         alert(data);
-     }
-  });
-    /*
+    var hold;//store php array here
+    
+    $.ajax({
+        type:"POST",
+        url:'php.php',
+        data:"",
+        dataType:'json',
+        success:function(key){
+            hold = key; //assign the php array to the JS var
+         }
+    });
+    
     google.charts.load('current',{packages:['corechart']});
     google.charts.setOnLoadCallback(drawChart);
     
@@ -302,11 +303,11 @@ function google()
         data.addColumn('string');
         data.addColumn('number');
         data.addRows([
-          ['i1', 3],
-          ['i2', 1],
-          ['i3', 1],
-          ['i4', 1],
-          ['i5', 2]
+          ['i1', hold[0]],
+          ['i2', hold[1]],
+          ['i3', hold[2]],
+          ['i4', hold[3]],
+          ['i5', hold[4]]
         ]);
         
         
@@ -318,7 +319,7 @@ function google()
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('DA'));
         chart.draw(data, options);
-      }*/
+      }
     
 }
 function d3(){}
